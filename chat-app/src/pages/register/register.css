@@ -1,0 +1,55 @@
+
+.chatApp__register-container{
+    background: var(--color-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatApp__register-container_form{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px 60px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.chatApp__register-container_form-logo{
+    color: var(--color-logo);
+    font-weight: 800;
+    font-size: 24px;
+    margin: 1rem 0;
+}
+.chatApp__register-container_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chatApp__register-container_form h1{
+    font-size: 20px;
+}
+
+.chatApp__register-container_form form input{
+    padding: 15px;
+    border: none;
+    width: 350px;
+    border-bottom: 1px solid var(--color-logo);
+}
+
+.chatApp__register-container_form form button{
+    background: var(--color-background);
+    color: #fff;
+    padding: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+.chatApp__register-container_form form button:hover{
+    background-color: #5e83ff;
+}
+
