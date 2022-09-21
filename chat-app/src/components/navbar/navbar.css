@@ -1,0 +1,35 @@
+.chatApp__navbar{
+    display: flex;
+    align-items: center;
+    background: #2f2d52;
+    height: 50px;
+    padding: 1rem;
+    justify-content: space-between;
+    color: var(--color-lightgray);
+}
+
+.chatApp__navbar-logo{
+    font-weight: 700;
+}
+
+.chatApp__navbar-user{
+    display: flex;
+    gap: .5rem;
+}
+
+.chatApp__navbar-user img{
+    background: var(--color-lightgray);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatApp__navbar-user button{
+    background-color: var(--color-logo);
+    color: var(--color-lightgray);
+    font-size: 10px;
+    border: none;
+    padding: .2rem;
+    cursor: pointer;
+}

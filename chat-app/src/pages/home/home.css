@@ -1,0 +1,24 @@
+.chatApp__home{
+    background: var(--color-background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatApp__home-container{
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+}
+
+.chatApp__sidebar{
+    flex: 1;
+    background: var(--color-subBackground);
+}
+.chatApp__chat{
+    flex: 2;
+}

@@ -1,5 +1,5 @@
 
-.chatApp__register-container{
+.chatApp__login-container{
     background: var(--color-background);
     height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.chatApp__register-container_form{
+.chatApp__login-container_form{
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -16,31 +16,31 @@
     align-items: center;
 }
 
-.chatApp__register-container_form-logo{
+.chatApp__login-container_form-logo{
     color: var(--color-logo);
     font-weight: 800;
     font-size: 24px;
     margin: 1rem 0;
 }
-.chatApp__register-container_form form{
+.chatApp__login-container_form form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.chatApp__register-container_form h1{
+.chatApp__login-container_form h1{
     font-size: 20px;
     margin-bottom: 1rem;
 }
 
-.chatApp__register-container_form form input{
+.chatApp__login-container_form form input{
     padding: 15px;
     border: none;
     width: 350px;
     border-bottom: 1px solid var(--color-logo);
 }
 
-.chatApp__register-container_form form button{
+.chatApp__login-container_form form button{
     background: var(--color-background);
     color: #fff;
     padding: 1rem;
@@ -50,11 +50,11 @@
     border-radius: .2rem;
 }
 
-.chatApp__register-container_form form button:hover{
+.chatApp__login-container_form form button:hover{
     background-color: #5e83ff;
 }
 
-.chatApp__register-container_form form label{
+.chatApp__login-container_form form label{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -64,11 +64,11 @@
 
 }
 
-.chatApp__register-container_form form label img {
+.chatApp__login-container_form form label img {
     width: 32px;
 }
 
-.chatApp__register-container_form p{
+.chatApp__login-container_form p{
     color: var(--color-logo);
     font-size: 14px;
     margin-top: 1rem;
