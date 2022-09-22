@@ -1,18 +1,23 @@
-import React from 'react'
-import './navbar.css'
+import React from "react";
+import { signOut } from "firebase/auth";
+import "./navbar.css";
+import { auth } from "../../firebase";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
-function navbar() {
+const Navbar = () => {
+  const { currentUser } = useContext(AuthContext);
+
   return (
-    <div className='chatApp__navbar'>
-      <span className="chatApp__navbar-logo">Smile Chat
-      </span>
+    <div className="chatApp__navbar">
+      <span className="chatApp__navbar-logo">Smile Chat</span>
       <div className="chatApp__navbar-user">
-        <img src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-        <span>Danier</span>
-        <button>logout</button>
+        <img src={currentUser.photoURL} alt="" />
+        <span>{currentUser.displayName}</span>
+        <button onClick={() => signOut(auth)}>logout</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default navbar
+export default Navbar;
