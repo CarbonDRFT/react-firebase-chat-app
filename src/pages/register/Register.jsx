@@ -54,7 +54,7 @@ const Register = () => {
   return (
     <div className="chatApp__register-container">
       <div className="chatApp__register-container_form">
-        <div className="chatApp__register-container_form-logo">Happy Chat</div>
+        <div className="chatApp__register-container_form-logo">Carbons Chat-App</div>
         <h1>Register</h1>
         <form onSubmit={handleSubmit}>
           <input type="test" placeholder="display name" />

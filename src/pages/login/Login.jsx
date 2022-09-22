@@ -24,7 +24,7 @@ const Login = () => {
   return (
     <div className="chatApp__login-container">
       <div className="chatApp__login-container_form">
-        <div className="chatApp__login-container_form-logo">Happy Chat</div>
+        <div className="chatApp__login-container_form-logo">Carbons Chat-App</div>
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
