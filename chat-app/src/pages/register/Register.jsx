@@ -1,10 +1,10 @@
-import { useState, React } from "react";
+import  React, { useState }  from "react";
 import Add from "../../img/addAvatar.png";
 import "./register.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../../firebase";
-import { doc, setDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -13,17 +13,15 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e.target[0].value);
+    
     const displayName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
-    const file = e.target[3].value;
+    const file = e.target[3].files[0];
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-
       const storageRef = ref(storage, displayName);
-
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       uploadTask.on(
